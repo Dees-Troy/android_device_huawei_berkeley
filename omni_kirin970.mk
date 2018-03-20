@@ -31,15 +31,20 @@ PRODUCT_PACKAGES += \
     charger
 
 PRODUCT_COPY_FILES += \
-    device/huawei/berkeley/dummykernel:kernel
+    device/huawei/kirin970/dummykernel:kernel
 
-PRODUCT_NAME := omni_berkeley
-PRODUCT_DEVICE := berkeley
+PRODUCT_NAME := omni_kirin970
+PRODUCT_DEVICE := kirin970
 PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := Honor View 10
+PRODUCT_MODEL := kirin970
 PRODUCT_MANUFACTURER := Huawei
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.zygote=zygote64_32 \
+    ro.secure=0 \
+    ro.adb.secure=0
+
 # Kernel inline build
-#TARGET_KERNEL_CONFIG := berkeley_defconfig
-#TARGET_VARIANT_CONFIG := berkeley_defconfig
-#TARGET_SELINUX_CONFIG := berkeley_defconfig
+#TARGET_KERNEL_CONFIG := kirin970_defconfig
+#TARGET_VARIANT_CONFIG := kirin970_defconfig
+#TARGET_SELINUX_CONFIG := kirin970_defconfig
