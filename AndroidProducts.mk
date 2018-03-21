@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_berkeley.mk
+    omni_kirin970:$(LOCAL_DIR)/omni_kirin970.mk
